@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Init.unity
+    path: Assets/Scenes/0x_Coinflip_Init.unity
     guid: f1dcc5c632a73d74891f6c7ad74be455
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/1x_Coinflip.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 885483}
   - component: {fileID: 885482}
   m_Layer: 5
-  m_Name: BSTitle
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,7 +692,7 @@ Transform:
   - {fileID: 135301303}
   - {fileID: 1217727292}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279409390
 GameObject:
@@ -1351,7 +1351,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &748948894
 GameObject:
@@ -1567,7 +1567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 771409042}
   m_Layer: 5
-  m_Name: ResultsMenu
+  m_Name: ResultMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1607,7 +1607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773664004}
   m_Layer: 5
-  m_Name: BetSelectionMenu
+  m_Name: BetMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1812,6 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   focusObject: {fileID: 1217727291}
+  cameraOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1025339487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,7 +1992,7 @@ GameObject:
   - component: {fileID: 1058833405}
   - component: {fileID: 1058833404}
   m_Layer: 5
-  m_Name: ImageResultsBG
+  m_Name: ImageBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2503,6 +2504,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winningSide: Tails
+--- !u!1 &1415260783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415260784}
+  - component: {fileID: 1415260785}
+  m_Layer: 0
+  m_Name: System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1415260784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415260783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415260785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415260783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77eb0f7518e5e8f45ba4f9f5d2f2abb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523858316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2532,7 +2576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1523858318
 MonoBehaviour:
@@ -2546,6 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1405b3edaab15d14fb4e633cb2724889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: {fileID: 1796884780}
   coin: {fileID: 1217727291}
   pushForceFactor: 50
 --- !u!1 &1665229753
@@ -2655,7 +2700,7 @@ GameObject:
   - component: {fileID: 1704826418}
   - component: {fileID: 1704826417}
   m_Layer: 5
-  m_Name: TextResultsTitle
+  m_Name: TextTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2752,7 +2797,7 @@ Transform:
   m_Children:
   - {fileID: 573443168}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1796884780
 MonoBehaviour:
@@ -2766,12 +2811,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7e03fca2787f142acc714a764afb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  betSelectionMenu: {fileID: 773664003}
-  resultsMenu: {fileID: 771409041}
-  resultBG: {fileID: 1058833404}
-  resultTitle: {fileID: 1704826417}
+  resultText: {fileID: 1704826417}
   totalWinsText: {fileID: 691093186}
   totalLossesText: {fileID: 355877278}
+  resultBG: {fileID: 1058833404}
+  betMenu: {fileID: 773664003}
+  resultMenu: {fileID: 771409041}
 --- !u!1 &1798128315
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,7 +2924,7 @@ GameObject:
   - component: {fileID: 1809484355}
   - component: {fileID: 1809484354}
   m_Layer: 5
-  m_Name: BSBG
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3006,7 +3051,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880156789
 GameObject:
